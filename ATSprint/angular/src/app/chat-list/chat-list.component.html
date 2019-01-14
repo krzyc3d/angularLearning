@@ -1,0 +1,23 @@
+<div class="example-container">
+  <h1>Welcome to {{title}}</h1>
+  <!-- <p>you need to log in to see chat list</p>
+  <a routerLink="/login">go back to login page</a> -->
+
+  <!-- ngIf sprawdzający czy user zalogowany -->
+<!--   
+  <mat-list>
+  <ol>
+  <mat-list-item *ngFor = "let chat of chatList" >
+      {{chat.name}}
+  </mat-list-item>
+  </ol>
+</mat-list> -->
+<mat-nav-list>
+  <mat-list-item *ngFor = "let chat of chatList" >
+   
+    <p> {{chat.name}}</p>
+    
+  </mat-list-item>
+</mat-nav-list>
+
+</div>
